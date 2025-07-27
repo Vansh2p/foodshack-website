@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodShacks - Fresh Bites, Fast Delights</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">FoodShacks</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Why Us</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Fresh Bites, Fast Delights</h1>
+      <p>We serve hot, fresh, and mouthwatering meals at your doorstep.</p>
+      <a href="#menu" class="btn">Explore Menu</a>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Why Choose FoodShacks?</h2>
+      <div class="grid">
+        <div class="card">
+          <i class="fas fa-seedling fa-2x"></i>
+          <h3>Fresh Ingredients</h3>
+          <p>We use only farm-fresh produce for every meal.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-truck fa-2x"></i>
+          <h3>Quick Delivery</h3>
+          <p>Fast, reliable delivery within 30 minutes guaranteed.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-utensils fa-2x"></i>
+          <h3>Diverse Menu</h3>
+          <p>From Indian spices to continental classics—something for everyone!</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-wallet fa-2x"></i>
+          <h3>Affordable Prices</h3>
+          <p>Delicious meals that don’t break the bank but it definetiely breaks yours heart:).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="menu">
+    <div class="container">
+      <h2>Our Best Sellers</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://placehold.co/250x150/111/fff?text=Burger" alt="Burger">
+          <h3>Spicy Shack Burger</h3>
+          <p>₹149 - A juicy patty with a fiery twist!</p>
+        </div>
+        <div class="card">
+          <img src="https://placehold.co/250x150/111/fff?text=Pizza" alt="Pizza">
+          <h3>Loaded Veggie Pizza</h3>
+          <p>₹299 - Topped with fresh veggies and melting cheese.</p>
+        </div>
+        <div class="card">
+          <img src="https://placehold.co/250x150/111/fff?text=Wrap" alt="Wrap">
+          <h3>Paneer Tikka Wrap</h3>
+          <p>₹129 - Smoky paneer with mint mayo wrapped fresh!</p>
+        </div>
+        <div class="card">
+          <img src="https://placehold.co/250x150/111/fff?text=Pasta" alt="Pasta">
+          <h3>Classic White Sauce Pasta</h3>
+          <p>₹199 - Juicy creamy pasta like  heaven!!!.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <h2>What Our Customers Say</h2>
+      <div class="grid">
+        <div class="card">
+          <p>"FoodShacks always delivers on time and their food is amazing! The burger is "BINGOOO BURST" a must-try."</p>
+          <h4>– Aakriti gupta.</h4>
+        </div>
+        <div class="card">
+          <p>"Absolutely love the variety and quality. The butter panner tastes like it came straight from mom's kitchen!"</p>
+          <h4>– Akshat pandey.</h4>
+        </div>
+        <div class="card">
+          <p>"Affordable, delicious, and always fresh. I'm Cooked Bro!"</p>
+          <h4>– Vansh Pandey.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Ready to Taste the Shack?</h2>
+      <p>Order now and get a flat 10% off on your first order.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form onsubmit="submitForm(event)">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FoodShacks. Crafted with flavor.</p>
+  </footer>
+
+  <script>
+    function submitForm(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      alert(`Thank you, ${name}! Your message has been sent.`);
+    }
+  </script>
+</body>
+</html>
